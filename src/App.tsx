@@ -21,10 +21,10 @@ interface ClassCell {
 function Cell({ data }: { data: ClassCell | OthersCell }) {
   if (data.type === 'class') {
     return (
-      <div className="cell class">
-        <div>{data.subject}</div>
-        <div>{data.teacher}</div>
-        <div>{data.room}</div>
+      <div className="cell">
+        <div className="class-name">{data.subject}</div>
+        <div className="teacher">{data.teacher}</div>
+        <div className="room">{data.room}</div>
       </div>
     )
   } else {
@@ -43,9 +43,14 @@ function App() {
         </div>
         <div>
           <h2>時間割</h2>
-          <div id="timetable">
-            {time.map((period) => (
-              period.cells.map((cell) => (
+          <div className="timetable">
+            <div />
+            <div className="header">月</div>
+            <div className="header">火</div>
+            <div className="header">水</div>
+            <div className="header">木</div>
+            <div className="header">金</div>
+            {time.map((period) => (              period.cells.map((cell) => (
                 <Cell data={cell} />
               ))
             ))}
