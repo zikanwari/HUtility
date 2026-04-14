@@ -20,16 +20,29 @@ interface ClassCell {
 };
 
 function Cell({ data }: { data: ClassCell | OthersCell }) {
-  if (data.type === 'class') {
-    return (
-      <div className="cell">
-        <div className="class-name">{data.subject}</div>
-        <div className="teacher">{data.teacher}</div>
-        <div className="room">{data.room}</div>
-      </div>
-    )
-  } else {
-    return <div className={`cell ${data.type}`}>{data.raw}</div>
+  switch (data.type) {
+    case 'class':
+      return (
+        <div className="cell">
+          <div className='class'>
+            <div className="class-name">{data.subject}</div>
+            <div className="teacher">{data.teacher}</div>
+            <div className="room">{data.room}</div>
+          </div>
+        </div>
+      )
+    case 'same':
+      return (
+        <div className={`cell ${data.type}`}>
+          <div className='class'>{data.raw}</div>
+        </div>
+      )
+    default:
+      return (
+        <div className={`cell ${data.type}`}>
+          {data.raw}
+        </div>
+      )
   }
 }
 
@@ -43,12 +56,8 @@ function App() {
   var time = sample as Period[]
 
   return (
-      <section>
-        <div>
-          <h1>HUtility</h1>
-        </div>
-        <div>
-          <h2>時間割</h2>
+      <section className="app-shell">
+        <div className="app-content">
           <div className="timetable">
             <div />
             <div className="header">月</div>
