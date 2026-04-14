@@ -1,0 +1,20 @@
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+.cell {
+  background-color: rgb(5, 61, 110);
+  width: 20vw;
+  margin: 10px;
+  display: inline-block;
+}
