@@ -43,7 +43,7 @@ function App() {
   var time = sample as Period[]
 
   return (
-      <section id="center">
+      <section>
         <div>
           <h1>HUtility</h1>
         </div>
