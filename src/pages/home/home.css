@@ -5,8 +5,8 @@
     gap: 8px;
     max-width: 93vw;
     margin: 0 auto;
-    height: 85vh;
     margin-top: 10px;
+    height: 100%;
 }
 
 .header,
