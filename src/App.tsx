@@ -11,11 +11,11 @@ function App() {
       </section>
       <section className="app-menu">
         <div className='menu-item'>
-          <TimeIcon />
+          <TimeIcon /><br />
           時間割
         </div>
         <div className='menu-item'>
-          <SettingsIcon />
+          <SettingsIcon /><br />
           設定
         </div>
       </section>
