@@ -1,0 +1,115 @@
+:root {
+    --page-bg: #f3f6fb;
+    --surface: #ffffff;
+    --ink: #1c2e43;
+    --ink-soft: #4d627a;
+    --line: #d8e1ec;
+    --accent: #1565c0;
+    --notice-bg: #fff6e8;
+    --notice-line: #f6b44b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "BIZ UDPGothic", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    background: var(--page-bg);
+    color: var(--ink);
+    line-height: 1.75;
+}
+
+main {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+}
+
+h1 {
+    margin: 0 0 4px;
+    font-size: clamp(1.45rem, 3.2vw, 1.85rem);
+    letter-spacing: 0.015em;
+}
+
+.subtitle {
+    margin: 0 0 16px;
+    color: var(--ink-soft);
+    font-size: 0.96rem;
+}
+
+.notice {
+    margin: 0 0 14px;
+    padding: 10px 12px;
+    border: 1px solid var(--notice-line);
+    border-radius: 10px;
+    background: var(--notice-bg);
+    color: #6a4608;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03);
+}
+
+.card h2 {
+    margin: 0 0 8px;
+    font-size: 1.06rem;
+}
+
+ol {
+    margin: 0;
+    padding-left: 1.3rem;
+}
+
+ul {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+li {
+    padding-left: 0.15rem;
+}
+
+li + li {
+    margin-top: 6px;
+}
+
+small {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--ink-soft);
+}
+
+a {
+    color: var(--accent);
+    text-underline-offset: 3px;
+}
+
+.guide-links {
+    list-style: disc;
+    padding-left: 1.3rem;
+    margin: 0;
+}
+
+.guide-links li + li {
+    margin-top: 6px;
+}
+
+.guide-links a {
+    display: inline;
+    text-decoration: underline;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+@media (max-width: 640px) {
+    main {
+        padding-top: 18px;
+    }
+}
