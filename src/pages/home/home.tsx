@@ -1,4 +1,5 @@
 import './home.css'
+import { useMemo } from 'react'
 
 import timedata from '../../assets/time.json'
 import sample from '../..//assets/sample.json'
@@ -55,8 +56,16 @@ function Time({ name }: { name: string }) {
 }
 
 export default function Home() {
-    //var time = localStorage.getItem('time')
-    var time = sample as Period[]
+    const time = useMemo(() => {
+        const saved = localStorage.getItem('time')
+        if (!saved) return sample as Period[]
+
+        try {
+            return JSON.parse(saved) as Period[]
+        } catch {
+            return sample as Period[]
+        }
+    }, [])
 
     return (
         <div className="app-content">

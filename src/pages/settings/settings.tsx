@@ -50,6 +50,29 @@ export default function Settings() {
 
     const currentGuide = guideByDevice[device]
 
+    const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
+        const file = event.target.files?.[0]
+        if (!file) return
+
+        try {
+            const savedData = await file.text()
+            const { extractTimetableFromSavedData } = await import('risyu2json')
+            const rows = extractTimetableFromSavedData(savedData)
+
+            const timetable = rows.map((row) => ({
+                name: row.period,
+                cells: row.cells,
+            }))
+
+            localStorage.setItem('time', JSON.stringify(timetable))
+            alert('時間割データを保存しました。')
+        } catch {
+            alert('時間割データの抽出に失敗しました。ファイル形式を確認してください。')
+        } finally {
+            event.target.value = ''
+        }
+    }
+
     return (
         <div className="app-content">
             <div className="import">
@@ -67,7 +90,7 @@ export default function Settings() {
                     >
                         インポートガイドを開く
                     </a><br />
-                    <input type="file" />
+                    <input type="file" onChange={handleFileChange} />
                 </Setting>
             </div>
         </div>
