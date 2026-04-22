@@ -1,5 +1,6 @@
 import './settings.css'
 import { useState } from 'react'
+import { extractFromAndroid, extractFromiOS } from 'risyu2json'
 
 function Setting({ title, children }: { title: string, children: React.ReactNode }) {
     const [isOpen, setIsOpen] = useState(false)
@@ -55,18 +56,15 @@ export default function Settings() {
         if (!file) return
 
         try {
-            const savedData = await file.text()
-            const { extractTimetableFromSavedData } = await import('risyu2json')
-            const rows = extractTimetableFromSavedData(savedData)
+            const lowerName = file.name.toLowerCase()
+            const rows = lowerName.endsWith('.webarchive')
+                ? extractFromiOS(await file.arrayBuffer())
+                : extractFromAndroid(await file.text())
 
-            const timetable = rows.map((row) => ({
-                name: row.period,
-                cells: row.cells,
-            }))
-
-            localStorage.setItem('time', JSON.stringify(timetable))
+            localStorage.setItem('time', JSON.stringify(rows))
             alert('時間割データを保存しました。')
-        } catch {
+        } catch (error) {
+            console.error(error)
             alert('時間割データの抽出に失敗しました。ファイル形式を確認してください。')
         } finally {
             event.target.value = ''
