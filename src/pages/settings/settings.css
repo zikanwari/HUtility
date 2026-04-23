@@ -1,6 +1,6 @@
 .setting {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: var(--panel-bg);
+    color: var(--panel-text);
 
     border-radius: 8px;
     margin: 0 auto;
@@ -11,7 +11,7 @@
 }
 
 .setting h3 {
-    color: #ecf0f1;
+    color: var(--panel-text);
     position: relative;
 }
 
@@ -49,8 +49,8 @@
 .guide-button {
     display: inline-block;
 
-    background: #1abc9c;
-    color: #102a43;
+    background: var(--accent);
+    color: var(--bg);
     border: none;
 
     border-radius: 6px;
@@ -59,6 +59,19 @@
 
     font-weight: 600;
     text-decoration: none;
+}
+
+.theme-label {
+    font-weight: 600;
+}
+
+.theme-select {
+    margin-top: 6px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--cell-bg);
+    color: var(--text-h);
 }
 
 @media (max-width: 1126px) {

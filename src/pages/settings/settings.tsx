@@ -2,6 +2,13 @@ import './settings.css'
 import { useState } from 'react'
 import { extractFromAndroid, extractFromiOS } from 'risyu2json'
 
+type ThemeMode = 'system' | 'light' | 'dark'
+
+interface SettingsProps {
+    themeMode: ThemeMode
+    onThemeModeChange: (mode: ThemeMode) => void
+}
+
 function Setting({ title, children }: { title: string, children: React.ReactNode }) {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -46,7 +53,7 @@ const guideByDevice = {
     },
 }
 
-export default function Settings() {
+export default function Settings({ themeMode, onThemeModeChange }: SettingsProps) {
     const device = detectDevice()
 
     const currentGuide = guideByDevice[device]
@@ -89,6 +96,22 @@ export default function Settings() {
                         インポートガイドを開く
                     </a><br />
                     <input type="file" onChange={handleFileChange} />
+                </Setting>
+            </div>
+            <div className="theme">
+                <Setting title="表示テーマ">
+                    <p>アプリの表示テーマを切り替えます。</p>
+                    <label className="theme-label" htmlFor="theme-mode">テーマ</label><br />
+                    <select
+                        id="theme-mode"
+                        className="theme-select"
+                        value={themeMode}
+                        onChange={(event) => onThemeModeChange(event.target.value as ThemeMode)}
+                    >
+                        <option value="system">端末設定に合わせる</option>
+                        <option value="light">ライト</option>
+                        <option value="dark">ダーク</option>
+                    </select>
                 </Setting>
             </div>
         </div>

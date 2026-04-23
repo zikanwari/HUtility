@@ -20,8 +20,8 @@
 
 .menu-item {
   align-items: center;
-  background: #2c3e50;
-  color: white;
+  background: var(--panel-bg);
+  color: var(--panel-text);
   padding: 8px;
   border-radius: 8px;
 }
@@ -37,5 +37,5 @@ svg {
   width: 15%;
   max-width: 50px;
   margin-bottom: 5px;
-  fill: #dddddda6;
+  fill: var(--muted);
 }
