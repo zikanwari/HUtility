@@ -108,6 +108,34 @@ a {
     font-weight: 600;
 }
 
+.shot-grid {
+    display: grid;
+    gap: 14px;
+    margin-top: 4px;
+}
+
+.shot {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fbfdff;
+}
+
+.shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+}
+
+.shot figcaption {
+    margin: 0 0 8px;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+}
+
 @media (max-width: 640px) {
     main {
         padding-top: 18px;
