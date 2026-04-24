@@ -2,7 +2,7 @@ import './settings.css'
 import { useState } from 'react'
 import { extractFromAndroid, extractFromiOS } from 'risyu2json'
 
-type ThemeMode = 'system' | 'light' | 'dark'
+import type { ThemeMode } from '../../theme'
 
 interface SettingsProps {
     themeMode: ThemeMode

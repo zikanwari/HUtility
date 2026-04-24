@@ -1,0 +1,38 @@
+{
+  "light": {
+    "--text": "#6b6375",
+    "--text-h": "#08060d",
+    "--bg": "#f5f7fa",
+    "--border": "#e5e4e7",
+    "--panel-bg": "#d8eaf7",
+    "--panel-bg-alt": "#c7dff0",
+    "--panel-text": "#2e3c49",
+    "--cell-bg": "#ffffff",
+    "--class-bg": "#cce5ff",
+    "--muted": "#7f8b98",
+    "--code-bg": "#f4f3ec",
+    "--accent": "#aa3bff",
+    "--accent-bg": "rgba(170, 59, 255, 0.1)",
+    "--accent-border": "rgba(170, 59, 255, 0.5)",
+    "--social-bg": "rgba(244, 243, 236, 0.5)",
+    "--shadow": "rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px"
+  },
+  "dark": {
+    "--text": "#9ca3af",
+    "--text-h": "#f3f4f6",
+    "--bg": "#16171d",
+    "--border": "#2e303a",
+    "--panel-bg": "#273445",
+    "--panel-bg-alt": "#304255",
+    "--panel-text": "#ecf0f1",
+    "--cell-bg": "#1f2028",
+    "--class-bg": "#2e4f75",
+    "--muted": "#c4ccd6",
+    "--code-bg": "#1f2028",
+    "--accent": "#c084fc",
+    "--accent-bg": "rgba(192, 132, 252, 0.15)",
+    "--accent-border": "rgba(192, 132, 252, 0.5)",
+    "--social-bg": "rgba(47, 48, 58, 0.5)",
+    "--shadow": "rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px"
+  }
+}

@@ -14,7 +14,7 @@ export default defineConfig({
         name: 'HUtility',
         short_name: 'HUtility',
         description: 'Utility app for HU students',
-        theme_color: '#ffffff',
+        theme_color: '#f5f7fa',
         background_color: '#ffffff',
         display: 'standalone',
         start_url: '/',

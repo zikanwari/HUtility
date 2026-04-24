@@ -5,35 +5,30 @@ import { TimeIcon, SettingsIcon } from './assets/images.tsx';
 
 import Home from './pages/home/home.tsx'
 import Settings from './pages/settings/settings.tsx'
-
-type ThemeMode = 'system' | 'light' | 'dark'
-
-const THEME_STORAGE_KEY = 'theme-mode'
-
-function getInitialThemeMode(): ThemeMode {
-  const saved = localStorage.getItem(THEME_STORAGE_KEY)
-  if (saved === 'light' || saved === 'dark' || saved === 'system') {
-    return saved
-  }
-  return 'light'
-}
+import {
+  applyTheme,
+  getInitialThemeMode,
+  THEME_MODE_STORAGE_KEY,
+  type ThemeMode,
+} from './theme'
 
 function App() {
   const [themeMode, setThemeMode] = useState<ThemeMode>(getInitialThemeMode);
   const [Tab, setTab] = useState('home');
 
   useEffect(() => {
-    localStorage.setItem(THEME_STORAGE_KEY, themeMode)
+    localStorage.setItem(THEME_MODE_STORAGE_KEY, themeMode)
+    applyTheme(themeMode)
 
-    const root = document.documentElement
-    if (themeMode === 'system') {
-      root.removeAttribute('data-theme')
-      root.style.colorScheme = 'light dark'
+    if (themeMode !== 'system') {
       return
     }
 
-    root.setAttribute('data-theme', themeMode)
-    root.style.colorScheme = themeMode
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    const handleChange = () => applyTheme('system')
+
+    mediaQuery.addEventListener('change', handleChange)
+    return () => mediaQuery.removeEventListener('change', handleChange)
   }, [themeMode])
 
   function renderPage() {
@@ -41,7 +36,12 @@ function App() {
       case 'home':
         return <Home />
       case 'settings':
-        return <Settings themeMode={themeMode} onThemeModeChange={setThemeMode} />
+        return (
+          <Settings
+            themeMode={themeMode}
+            onThemeModeChange={setThemeMode}
+          />
+        )
       default:
         return <Home />
     }
