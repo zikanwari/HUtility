@@ -41,15 +41,15 @@ function detectDevice(): DeviceType {
 const guideByDevice = {
     android: {
         label: 'Android',
-        url: '/guides/export/android.html',
+        url: 'https://docs.hutility.f5.si/export/android.html',
     },
     ios: {
         label: 'iOS',
-        url: '/guides/export/ios.html',
+        url: 'https://docs.hutility.f5.si/export/ios.html',
     },
     other: {
         label: 'その他端末',
-        url: '/guides/export/index.html',
+        url: 'https://docs.hutility.f5.si/export/index.html',
     },
 }
 
