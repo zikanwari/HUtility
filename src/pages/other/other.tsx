@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom'
+
 import '../../assets/menu.css'
+
 type Props = {
     setTab: (tab: string) => void
 }
@@ -14,9 +17,11 @@ function SimpleMenu({ title }: { title: string } ) {
 }
 
 export default function Other({ setTab }: Props) {
+    const navigate = useNavigate()
+    
     return (
         <>
-            <div onClick={() => setTab('bus-timer')}>
+            <div onClick={() => navigate('/bus-timer')}>
                 <SimpleMenu title="バス時刻表"/>
             </div>
             <div onClick={() => setTab('settings')}>

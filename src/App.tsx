@@ -7,6 +7,7 @@ import { TimeIcon, OtherIcon } from './assets/images.tsx';
 import Home from './pages/home/home.tsx'
 import Settings from './pages/settings/settings.tsx'
 import Other from './pages/other/other.tsx';
+import BusTimer from './pages/tools/bus-timer/bus-timer.tsx'
 
 import {
   applyTheme,
@@ -19,6 +20,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<MainPage />} />
+      <Route path="/bus-timer" element={<BusTimer />} />
     </Routes>
   )
 }
