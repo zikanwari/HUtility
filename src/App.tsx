@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom'
 
 import './App.css'
-import { TimeIcon, SettingsIcon } from './assets/images.tsx';
+import { TimeIcon, OtherIcon } from './assets/images.tsx';
 
 import Home from './pages/home/home.tsx'
 import Settings from './pages/settings/settings.tsx'
+import Other from './pages/other/other.tsx';
+
 import {
   applyTheme,
   getInitialThemeMode,
@@ -13,6 +16,14 @@ import {
 } from './theme'
 
 function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+    </Routes>
+  )
+}
+
+function MainPage() {
   const [themeMode, setThemeMode] = useState<ThemeMode>(getInitialThemeMode);
   const [Tab, setTab] = useState('home');
 
@@ -38,10 +49,13 @@ function App() {
       case 'settings':
         return (
           <Settings
+            setTab={setTab}
             themeMode={themeMode}
             onThemeModeChange={setThemeMode}
           />
         )
+      case 'other':
+        return <Other setTab={setTab} />
       default:
         return <Home />
     }
@@ -57,9 +71,9 @@ function App() {
           <TimeIcon /><br />
           時間割
         </div>
-        <div className='menu-item' onClick={() => setTab('settings')}>
-          <SettingsIcon /><br />
-          設定
+        <div className='menu-item' onClick={() => setTab('other')}>
+          <OtherIcon /><br />
+          その他
         </div>
       </section>
     </>

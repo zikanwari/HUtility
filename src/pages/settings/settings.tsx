@@ -1,4 +1,5 @@
 import './settings.css'
+import '../../assets/menu.css'
 import { useState } from 'react'
 import { extractFromAndroid, extractFromiOS } from 'risyu2json'
 
@@ -9,16 +10,20 @@ interface SettingsProps {
     onThemeModeChange: (mode: ThemeMode) => void
 }
 
-function Setting({ title, children }: { title: string, children: React.ReactNode }) {
+type Props = {
+    setTab: (tab: string) => void
+}
+
+function AccordionMenu({ title, children }: { title: string, children: React.ReactNode }) {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="setting">
-            <h3 className={`setting-title${isOpen ? ' open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+        <div className="menu">
+            <h3 className={`menu-accordion${isOpen ? ' open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
                 {title}
             </h3>
-            <div className={`setting-content${isOpen ? ' open' : ''}`}>
-                <div className="setting-content-inner">
+            <div className={`menu-content${isOpen ? ' open' : ''}`}>
+                <div className="menu-content-inner">
                     {children}
                 </div>
             </div>
@@ -53,7 +58,7 @@ const guideByDevice = {
     },
 }
 
-export default function Settings({ themeMode, onThemeModeChange }: SettingsProps) {
+export default function Settings({ themeMode, onThemeModeChange, setTab }: SettingsProps & Props) {
     const device = detectDevice()
 
     const currentGuide = guideByDevice[device]
@@ -69,7 +74,7 @@ export default function Settings({ themeMode, onThemeModeChange }: SettingsProps
                 : extractFromAndroid(await file.text())
 
             localStorage.setItem('time', JSON.stringify(rows))
-            alert('時間割データを保存しました。')
+            alert('時間割データを保存しました。\n「時間割」から確認できます。')
         } catch (error) {
             console.error(error)
             alert('時間割データの抽出に失敗しました。ファイル形式を確認してください。')
@@ -80,8 +85,13 @@ export default function Settings({ themeMode, onThemeModeChange }: SettingsProps
 
     return (
         <div className="app-content">
+            <div className="back" onClick={() => setTab('other')}>
+                <h3>
+                    &lt; 戻る
+                </h3>
+            </div>
             <div className="import">
-                <Setting title="履修データのインポート">
+                <AccordionMenu title="履修データのインポート">
                     <p>履修データから時間割を自動生成します。<br />
                     履修データのエクスポートの手順については、下のガイドを参照してください。
                     </p>
@@ -96,10 +106,10 @@ export default function Settings({ themeMode, onThemeModeChange }: SettingsProps
                         インポートガイドを開く
                     </a><br />
                     <input type="file" onChange={handleFileChange} />
-                </Setting>
+                </AccordionMenu>
             </div>
             <div className="theme">
-                <Setting title="表示テーマ">
+                <AccordionMenu title="表示テーマ">
                     <p>アプリの表示テーマを切り替えます。</p>
                     <label className="theme-label" htmlFor="theme-mode">テーマ</label><br />
                     <select
@@ -112,7 +122,7 @@ export default function Settings({ themeMode, onThemeModeChange }: SettingsProps
                         <option value="light">ライト</option>
                         <option value="dark">ダーク</option>
                     </select>
-                </Setting>
+                </AccordionMenu>
             </div>
         </div>
     )
