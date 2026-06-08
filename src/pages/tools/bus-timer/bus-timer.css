@@ -1,3 +1,7 @@
+.timer, .next {
+    font-family: "Yu Gothic Medium", "Yu Gothic", sans-serif;
+}
+
 .conditions > div {
     margin-bottom: 1em;
 }
@@ -12,4 +16,54 @@
     .stops {
         flex-direction: column;
     }
+}
+
+.plate {
+    padding: 0.3em;
+    color: white;
+    width: 4em;
+}
+
+.timer {
+    background-color: #494949;
+    color: white;
+
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+}
+
+.timer h1 {
+    margin: 0 0;
+    margin-top: -10px;
+    font-size: 3em;
+}
+
+.timer > h1 > span {
+    font-size: small;
+}
+
+.next {
+    background-color: #494949;
+    color: white;
+
+    width: 86%;
+    margin: 0 auto;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.next > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.unit {
+    font-size: x-small;
 }
