@@ -1,0 +1,2161 @@
+{
+  "広大中央口": [
+    {
+      "legend": 1,
+      "time": "06:23",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "06:37",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "06:55",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "07:07",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "07:32",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "08:00",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "08:17",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "08:45",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "08:55",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "09:07",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "09:27",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "09:45",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "10:00",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "10:15",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "10:45",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:00",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:15",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:45",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "12:00",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "12:15",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "12:30",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "12:45",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "13:00",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:15",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:28",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "13:30",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:45",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "14:00",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:15",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:28",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "14:30",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:45",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "15:00",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "15:15",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "15:30",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "15:45",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "16:00",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "16:15",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "16:20",
+      "company": "JR",
+      "rapid": true,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "16:25",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "16:30",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "16:47",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:00",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "17:15",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:25",
+      "company": "JR",
+      "rapid": true,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "17:30",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:45",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "18:00",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "18:10",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "18:15",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "18:30",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "18:55",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "19:12",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "19:32",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "19:52",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "20:12",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "20:37",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "21:00",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "21:20",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "21:55",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "22:15",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    }
+  ],
+  "広大西口": [
+    {
+      "legend": 1,
+      "time": "06:26",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "06:40",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "06:58",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "07:10",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "07:35",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "08:03",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "08:20",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "08:48",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "08:58",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "09:10",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "09:30",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "09:48",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "10:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "10:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "10:48",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:03",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:18",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:48",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "12:03",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "12:18",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "12:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "12:48",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "13:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:18",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:31",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "13:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:48",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "14:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:18",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:31",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "14:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:48",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "15:03",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "15:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "15:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "15:48",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "16:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "16:18",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "16:23",
+      "company": "JR",
+      "rapid": true,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "16:28",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "16:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "16:50",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:03",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "17:18",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:28",
+      "company": "JR",
+      "rapid": true,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "17:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:48",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "18:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "18:13",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "18:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "18:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "18:58",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "19:15",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "19:35",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "19:55",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "20:15",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "20:40",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "21:03",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "21:23",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "21:58",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "22:18",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    }
+  ],
+  "大学会館前": [
+    {
+      "legend": 1,
+      "time": "06:27",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "06:41",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "06:59",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "07:11",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "07:36",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "08:04",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "08:21",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "08:49",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "08:59",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "09:11",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "09:31",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "09:49",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "10:04",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "10:19",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "10:49",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:04",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:19",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:49",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "12:04",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "12:19",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "12:34",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "12:49",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "13:04",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:19",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:32",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "13:34",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:49",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "14:04",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:19",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:32",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "14:34",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:49",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "15:04",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "15:19",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "15:34",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "15:49",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "16:04",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "16:19",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "16:24",
+      "company": "JR",
+      "rapid": true,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "16:29",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "16:34",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "16:51",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:04",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "17:19",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:29",
+      "company": "JR",
+      "rapid": true,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "17:34",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:49",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "18:04",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "18:14",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "18:19",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "18:34",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "18:59",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "19:16",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "19:36",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "19:56",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "20:16",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "20:41",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "21:04",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "21:24",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "21:59",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "22:19",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    }
+  ],
+  "山中池": [
+    {
+      "legend": 1,
+      "time": "06:31",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "06:45",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "07:03",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "07:17",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "07:42",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "08:10",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "08:27",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "08:55",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "09:05",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "09:17",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "09:35",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "09:53",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "10:08",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "10:23",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "10:53",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:08",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:23",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "11:53",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "12:08",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "12:23",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "12:38",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "12:53",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "13:08",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:23",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:36",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "13:38",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "13:53",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "14:08",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:23",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:36",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "14:38",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "14:55",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "15:10",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "15:25",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "15:40",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "15:55",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "16:10",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "16:25",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "16:28",
+      "company": "JR",
+      "rapid": true,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "16:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "16:40",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "16:57",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:10",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "17:25",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:33",
+      "company": "JR",
+      "rapid": true,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "17:40",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "17:55",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "18:10",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "18:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "18:25",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "18:40",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "19:05",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "19:22",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "19:42",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "20:02",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 2,
+      "time": "20:20",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "20:45",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "21:08",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "21:28",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 0,
+      "time": "22:03",
+      "company": "JR",
+      "rapid": false,
+      "destination": "西条駅"
+    },
+    {
+      "legend": 1,
+      "time": "22:23",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "西条駅"
+    }
+  ],
+  "西条駅": [
+    {
+      "legend": 1,
+      "time": "06:55",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "07:20",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "07:48",
+      "company": "JR",
+      "rapid": true,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "07:48",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "08:05",
+      "company": "JR",
+      "rapid": true,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "08:05",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "08:08",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "08:13",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "08:33",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "08:43",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "08:55",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "09:15",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "09:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "09:33",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "09:48",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "10:03",
+      "company": "JR",
+      "rapid": true,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "10:03",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "10:20",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "10:33",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "10:48",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "11:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "11:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "11:48",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "12:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "12:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "12:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "12:48",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "12:50",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "13:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "13:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "13:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "13:48",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "13:50",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "14:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "14:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "14:33",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "14:48",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "15:03",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "15:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "15:33",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "15:35",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "15:48",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "16:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "16:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "16:35",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "16:48",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "17:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "17:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "17:33",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "17:35",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "17:48",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "18:03",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "18:18",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "18:43",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "19:00",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "19:20",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "19:40",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 2,
+      "time": "20:00",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "20:25",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "20:48",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "21:08",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 0,
+      "time": "21:43",
+      "company": "JR",
+      "rapid": false,
+      "destination": "広島大学"
+    },
+    {
+      "legend": 1,
+      "time": "22:03",
+      "company": "芸陽",
+      "rapid": false,
+      "destination": "広島大学"
+    }
+  ]
+}
