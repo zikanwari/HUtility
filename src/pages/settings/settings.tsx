@@ -114,7 +114,7 @@ export default function Settings({ themeMode, onThemeModeChange, setTab }: Setti
                     <label className="theme-label" htmlFor="theme-mode">テーマ</label><br />
                     <select
                         id="theme-mode"
-                        className="theme-select"
+                        className="select-menu"
                         value={themeMode}
                         onChange={(event) => onThemeModeChange(event.target.value as ThemeMode)}
                     >

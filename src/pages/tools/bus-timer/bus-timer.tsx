@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+
 import './bus-timer.css'
+import '../../../assets/menu.css'
 import busData from '../../../assets/bus.json'
 import * as BusUtils from "./bus-utils";
 
@@ -132,6 +134,7 @@ export default function BusTimer() {
                         <label htmlFor="departure">乗車バス停 </label>
                         <select
                             id="departure"
+                            className="select-menu"
                             value={departure}
                             onChange={(e) => setDeparture(e.target.value)}
                         >
@@ -150,6 +153,7 @@ export default function BusTimer() {
                         <label htmlFor="arrival">行き先方面 </label>
                         <select
                             id="arrival"
+                            className="select-menu"
                             value={arrival}
                             onChange={(e) => setArrival(e.target.value)}
                         >

@@ -17,15 +17,6 @@
     font-weight: 600;
 }
 
-.theme-select {
-    margin-top: 6px;
-    padding: 6px 10px;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-    background: var(--cell-bg);
-    color: var(--text-h);
-}
-
 .back {
     padding: 0 15px;
     text-align: left;
