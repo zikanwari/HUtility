@@ -12,6 +12,10 @@
     gap: 1em;
 }
 
+input {
+    margin-left: 2em;
+}
+
 @media (max-width: 380px) {
     .stops {
         flex-direction: column;

@@ -40,6 +40,13 @@ const stopDestinations: Record<string, string[]> = {
     "八本松駅": D_UNIV,
     "東広島駅": D_UNIV,
 }
+
+const schedules = [
+    "平日",
+    "土・日",
+    "年末年始",
+]
+
 const jr: React.CSSProperties = {
     backgroundColor: 'rgb(0, 103, 182)',
 }
@@ -87,6 +94,7 @@ export default function BusTimer() {
 
     const [departure, setDeparture] = useState(busStops[0])
     const [arrival, setArrival] = useState("");
+    const [schedule, setSchedule] = useState(schedules[0]);
     const [showJR, setShowJR] = useState(true);
     const [showGeiyo, setShowGeiyo] = useState(true);
     const [, setTick] = useState(0);
@@ -167,6 +175,20 @@ export default function BusTimer() {
                     </div>
                 </div>
                 <div>
+                    <label htmlFor="schedule">ダイヤ</label>
+                    <select
+                        id="schedule"
+                        className="select-menu"
+                        value={schedule}
+                        onChange={(e) => setSchedule(e.target.value)}
+                    >
+                        {schedules.map((schedule) => (
+                            <option key={schedule} value={schedule}>
+                                {schedule}
+                            </option>
+                        ))}
+                    </select>
+
                     <input
                         type="checkbox"
                         id="jr"

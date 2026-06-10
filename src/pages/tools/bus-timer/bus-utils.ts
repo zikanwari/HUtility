@@ -51,17 +51,29 @@ export function filterBuses(
     showJR: boolean,
     showGeiyo: boolean
 ): BusInfo[] {
+    const today = new Date();
+    const newYear = isNewYearSchedule(today);
+    const holiday = isHolidaySchedule(today);
+
     return buses.filter((bus) => {
+        if (newYear) {
+            return bus.legend === 2;
+        }
         if (
-            bus.company === "JR" &&
-            !showJR
+            holiday &&
+            bus.legend === 1
+        ) {
+            return false;
+        }
+        
+        if (
+            bus.company === "JR" && !showJR
         ) {
             return false;
         }
 
         if (
-            bus.company === "芸陽" &&
-            !showGeiyo
+            bus.company === "芸陽" && !showGeiyo
         ) {
             return false;
         }
@@ -110,7 +122,50 @@ export function getRemainingSeconds(
         Math.floor(
             (target.getTime() -
                 now.getTime()) /
-                1000
+            1000
         )
+    );
+}
+
+function isHolidaySchedule(date: Date): boolean {
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+
+    // 土日
+    if (
+        date.getDay() === 0 ||
+        date.getDay() === 6
+    ) {
+        return true;
+    }
+
+    // 8/13～8/16
+    if (
+        month === 8 &&
+        day >= 13 &&
+        day <= 16
+    ) {
+        return true;
+    }
+
+    // 12/29～12/30
+    if (
+        month === 12 &&
+        day >= 29 &&
+        day <= 30
+    ) {
+        return true;
+    }
+
+    return false;
+}
+
+function isNewYearSchedule(date: Date): boolean {
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+
+    return (
+        (month === 12 && day === 31) ||
+        (month === 1 && day >= 1 && day <= 3)
     );
 }
