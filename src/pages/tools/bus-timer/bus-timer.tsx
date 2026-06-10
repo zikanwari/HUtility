@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 import './bus-timer.css'
 import '../../../assets/menu.css'
-import busData from '../../../assets/bus.json'
+import busData from '../../../assets/busdata.json'
 import * as BusUtils from "./bus-utils";
 
 const busStops = [
@@ -48,7 +48,8 @@ const geiyo: React.CSSProperties = {
 }
 const rapid: React.CSSProperties = {
     backgroundColor: 'rgb(255, 62, 62)',
-    marginLeft: '4px',
+    marginLeft: '5px',
+    marginRight: '-5px',
     padding: '0.5px 2px',
 }
 
@@ -225,9 +226,9 @@ export default function BusTimer() {
                                 }
                             >
                                 {bus.company}
-                                {bus.rapid
-                                    ? " 急行"
-                                    : ""}
+                                {bus.rapid && (
+                                    <span style={rapid}>(急)</span>
+                                )}
                             </span>
 
                             {bus.time}発
