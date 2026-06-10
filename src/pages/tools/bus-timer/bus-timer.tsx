@@ -19,12 +19,12 @@ const busStops = [
 ]
 
 // 行き先のパターンを定義
-const D_ALL = ["西条駅方面", "八本松駅方面", "東広島駅方面"]
-const D_S_HIGASHI = ["西条駅方面", "東広島駅方面"]
-const D_HACHI_HIGASHI = ["八本松駅方面", "東広島駅方面"]
-const D_HACHI = ["八本松駅方面"]
-const D_HIGASHI = ["東広島駅方面"]
-const D_UNIV = ["広島大学方面"]
+const D_ALL = ["西条駅", "八本松駅", "東広島駅"]
+const D_S_HIGASHI = ["西条駅", "東広島駅"]
+const D_HACHI_HIGASHI = ["八本松駅", "東広島駅"]
+const D_HACHI = ["八本松駅"]
+const D_HIGASHI = ["東広島駅"]
+const D_UNIV = ["広島大学"]
 
 const stopDestinations: Record<string, string[]> = {
     "広大中央口": D_ALL,
@@ -90,7 +90,6 @@ export default function BusTimer() {
     const currentDestinations = stopDestinations[departure] || []
 
     const buses = (busData as Record<string, BusUtils.BusInfo[]>)[departure] ?? [];
-    const destinations = BusUtils.getDestinations(buses);
     const filteredBuses = BusUtils.filterBuses(
         buses,
         arrival,
@@ -156,7 +155,7 @@ export default function BusTimer() {
                         >
                             {currentDestinations.map((destination) => (
                                 <option key={destination} value={destination}>
-                                    {destination}
+                                    {destination}方面
                                 </option>
                             ))}
                         </select>
