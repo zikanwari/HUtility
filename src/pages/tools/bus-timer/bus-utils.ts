@@ -45,22 +45,34 @@ export function getDestinations(
     ];
 }
 
+export function getSchedule(
+    date: Date
+): string {
+    if (isNewYearSchedule(date)) {
+        return "年末年始";
+    }
+
+    if (isHolidaySchedule(date)) {
+        return "土・日";
+    }
+
+    return "平日";
+}
+
+
 export function filterBuses(
     buses: BusInfo[],
     destination: string,
     showJR: boolean,
-    showGeiyo: boolean
+    showGeiyo: boolean,
+    schedule: string
 ): BusInfo[] {
-    const today = new Date();
-    const newYear = isNewYearSchedule(today);
-    const holiday = isHolidaySchedule(today);
-
     return buses.filter((bus) => {
-        if (newYear) {
+        if (schedule === "年末年始") {
             return bus.legend === 2;
         }
         if (
-            holiday &&
+            schedule === "土・日" &&
             bus.legend === 1
         ) {
             return false;
