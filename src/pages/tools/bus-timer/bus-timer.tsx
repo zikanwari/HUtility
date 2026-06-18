@@ -94,7 +94,7 @@ export default function BusTimer() {
 
     const [departure, setDeparture] = useState(busStops[0])
     const [arrival, setArrival] = useState("");
-    const [schedule, setSchedule] = useState(schedules[0]);
+    const [schedule, setSchedule] = useState(BusUtils.getSchedule(new Date()));
     const [showJR, setShowJR] = useState(true);
     const [showGeiyo, setShowGeiyo] = useState(true);
     const [, setTick] = useState(0);
@@ -105,7 +105,8 @@ export default function BusTimer() {
         buses,
         arrival,
         showJR,
-        showGeiyo
+        showGeiyo,
+        schedule
     );
     const upcomingBuses = BusUtils.getUpcomingBuses(filteredBuses);
     const nextBus = upcomingBuses[0];
