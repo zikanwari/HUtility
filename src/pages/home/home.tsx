@@ -96,8 +96,8 @@ function Cell({
             )
         case 'same':
             return (
-                <div className={`cell ${data.type} ${active ? 'cell--active' : ''}`}>
-                    <div className="class">{data.raw}</div>
+                <div className={`cell ${data.type}`}>
+                    <div className={`class ${active ? 'class--active' : ''}`}>{data.raw}</div>
                 </div>
             )
         default:
@@ -152,8 +152,7 @@ export default function Home() {
                                 data={cell}
                                 active={
                                     periodIndex === activePeriodIndex &&
-                                    activeDayIndex === dayIndex &&
-                                    cell.type === 'class'
+                                    activeDayIndex === dayIndex
                                 }
                             />
                         ))}
