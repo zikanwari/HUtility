@@ -112,6 +112,10 @@
     padding-top: 4px;
 }
 
+.class--active {
+    background-color: var(--class-color-alt);
+}
+
 .teacher,
 .room {
     color: var(--text-h);
