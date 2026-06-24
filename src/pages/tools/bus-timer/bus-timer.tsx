@@ -5,19 +5,20 @@ import './bus-timer.css'
 import '../../../assets/menu.css'
 import busData from '../../../assets/busdata.json'
 import * as BusUtils from "./bus-utils";
+import { fetchBusDelays, type BusDelayMap } from "./bus-gtfs";
 
 const busStops = [
-    "広大中央口",
-    "広大北口",
-    "広大二神口",
-    "広大西口",
-    "大学会館前",
-    "ががら口",
-    "山中池",
-    "---",
-    "西条駅",
-    "八本松駅",
-    "東広島駅",
+    ["広大中央口", 40010, 14],
+    ["広大北口", 40011, 15],
+    ["広大二神口", 40012, 16],
+    ["広大西口", 40013, 18],
+    ["大学会館前", 40014, 19],
+    ["ががら口", 40015, 20],
+    ["山中池", 40017, 22],
+    ["---",],
+    ["西条駅", 40001, 2065],
+    ["八本松駅", 40018, ],
+    ["東広島駅", 40030, ],
 ]
 
 // 行き先のパターンを定義
@@ -62,12 +63,15 @@ const rapid: React.CSSProperties = {
 
 function RemainingTime({
     time,
+    delaySeconds = 0,
 }: {
     time: string;
+    delaySeconds?: number;
 }) {
     const totalSeconds =
         BusUtils.getRemainingSeconds(
-            time
+            time,
+            delaySeconds
         );
 
     const minutes =
@@ -92,12 +96,13 @@ function RemainingTime({
 export default function BusTimer() {
     const navigate = useNavigate()
 
-    const [departure, setDeparture] = useState(busStops[0])
+    const [departure, setDeparture] = useState(busStops[0][0] as string)
     const [arrival, setArrival] = useState("");
     const [schedule, setSchedule] = useState(BusUtils.getSchedule(new Date()));
     const [showJR, setShowJR] = useState(true);
     const [showGeiyo, setShowGeiyo] = useState(true);
     const [, setTick] = useState(0);
+    const [delays, setDelays] = useState<BusDelayMap>({});
     const currentDestinations = stopDestinations[departure] || []
 
     const buses = (busData as Record<string, BusUtils.BusInfo[]>)[departure] ?? [];
@@ -108,9 +113,27 @@ export default function BusTimer() {
         showGeiyo,
         schedule
     );
-    const upcomingBuses = BusUtils.getUpcomingBuses(filteredBuses);
+
+    const departureStopInfo = (busStops as Array<any>).find(stop => stop[0] === departure);
+    const jrDepartureId = String(departureStopInfo?.[1] || "");
+    const geiyoDepartureId = String(departureStopInfo?.[2] || "");
+
+    const jrDelays = delays[jrDepartureId] || {};
+    const geiyoDelays = delays[geiyoDepartureId] || {};
+
+    const combinedDelays: Record<string, number> = {};
+    for (const bus of filteredBuses) {
+        const delay = bus.company === 'JR' ? jrDelays[bus.time] : geiyoDelays[bus.time];
+        if (delay) {
+            combinedDelays[bus.time] = delay;
+        }
+    }
+
+    const upcomingBuses = BusUtils.getUpcomingBuses(filteredBuses, combinedDelays);
     const nextBus = upcomingBuses[0];
     const laterBuses = upcomingBuses.slice(1, 6);
+
+    const nextBusDelay = nextBus && (nextBus.company === 'JR' ? jrDelays[nextBus.time] : geiyoDelays[nextBus.time]);
 
     useEffect(() => {
         const buses = (busData as Record<string, BusUtils.BusInfo[]>)[departure] ?? [];
@@ -131,6 +154,21 @@ export default function BusTimer() {
             clearInterval(timer);
     }, []);
 
+    // GTFSの遅延情報を取得（1分ごとに更新）
+    useEffect(() => {
+        let isMounted = true;
+        const loadDelays = async () => {
+            const data = await fetchBusDelays();
+            if (isMounted) setDelays(data);
+        };
+        loadDelays();
+        const interval = setInterval(loadDelays, 60000);
+        return () => {
+            isMounted = false;
+            clearInterval(interval);
+        };
+    }, []);
+
     return (
         <>
             <div className="back" onClick={() => navigate(-1)}>
@@ -148,13 +186,13 @@ export default function BusTimer() {
                             value={departure}
                             onChange={(e) => setDeparture(e.target.value)}
                         >
-                            {busStops.map((stop) => (
+                            {busStops.map(([stop, id]) => (
                                 <option
-                                    key={stop}
-                                    value={stop}
+                                    key={stop as string}
+                                    value={stop as string}
                                     disabled={stop === "---"}
                                 >
-                                    {stop}
+                                    {stop as string}
                                 </option>
                             ))}
                         </select>
@@ -224,9 +262,17 @@ export default function BusTimer() {
 
                             {"　"}{nextBus.time}発{"　"}
                             {nextBus.destination}方面
+                            {nextBusDelay ? (
+                                <span style={{ color: '#ff5555', marginLeft: '10px' }}>
+                                    約{Math.floor(nextBusDelay / 60)}分遅れ
+                                </span>
+                            ) : null}
                         </p>
                         <h1>
-                            <RemainingTime time={nextBus.time} />
+                            <RemainingTime
+                                time={nextBus.time}
+                                delaySeconds={nextBusDelay || 0}
+                            />
                         </h1>
                     </>
                 ) : (
@@ -234,8 +280,9 @@ export default function BusTimer() {
                 )}
             </div>
             <div className="next">
-                {laterBuses.map(
-                    (bus) => (
+                {laterBuses.map((bus) => {
+                    const delay = (bus.company === 'JR' ? jrDelays[bus.time] : geiyoDelays[bus.time]) || 0;
+                    return (
                         <div
                             key={`${bus.time}-${bus.destination}`}
                         >
@@ -262,16 +309,19 @@ export default function BusTimer() {
                             方面
 
                             <span>
-                                {BusUtils.getRemainingMinutes(
-                                    bus.time
-                                )}
+                                {Math.floor(BusUtils.getRemainingSeconds(bus.time, delay) / 60)}
                                 <span className="unit">
+                                    {delay ? (
+                                        <span style={{ color: '#ff5555', fontSize: '0.8rem' }}>
+                                            ({Math.floor(delay / 60)})
+                                        </span>
+                                    ) : null}
                                     分後
                                 </span>
                             </span>
                         </div>
-                    )
-                )}
+                    );
+                })}
             </div>
             <div className="footer">表示されている時間は3月14日時点の時刻表のものです。実際の運行状況とは異なる場合があります。</div>
         </>

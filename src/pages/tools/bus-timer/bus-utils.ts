@@ -102,12 +102,13 @@ export function filterBuses(
 }
 
 export function getUpcomingBuses(
-    buses: BusInfo[]
+    buses: BusInfo[],
+    delaysForStop: Record<string, number> = {}
 ): BusInfo[] {
     return buses
         .filter(
             (bus) =>
-                getRemainingSeconds(bus.time) > 0
+                getRemainingSeconds(bus.time, delaysForStop[bus.time] || 0) > 0
         )
         .sort((a, b) =>
             a.time.localeCompare(b.time)
@@ -115,7 +116,8 @@ export function getUpcomingBuses(
 }
 
 export function getRemainingSeconds(
-    time: string
+    time: string,
+    delaySeconds: number = 0
 ): number {
     const now = new Date();
 
@@ -126,7 +128,7 @@ export function getRemainingSeconds(
 
     target.setHours(hour);
     target.setMinutes(minute);
-    target.setSeconds(0);
+    target.setSeconds(delaySeconds);
     target.setMilliseconds(0);
 
     return Math.max(
