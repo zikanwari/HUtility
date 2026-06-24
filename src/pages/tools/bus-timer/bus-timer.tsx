@@ -308,14 +308,15 @@ export default function BusTimer() {
                             }
                             方面
 
-                            <span>
+                            <span className="remaining-time">
                                 {Math.floor(BusUtils.getRemainingSeconds(bus.time, delay) / 60)}
+
+                                {delay ? (
+                                    <span style={{ color: '#ff5555', margin: '2px' }}>
+                                        ({Math.floor(delay / 60)})
+                                    </span>
+                                ) : null}
                                 <span className="unit">
-                                    {delay ? (
-                                        <span style={{ color: '#ff5555', fontSize: '0.8rem' }}>
-                                            ({Math.floor(delay / 60)})
-                                        </span>
-                                    ) : null}
                                     分後
                                 </span>
                             </span>
