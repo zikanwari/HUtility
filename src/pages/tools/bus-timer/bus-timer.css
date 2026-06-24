@@ -64,10 +64,9 @@ input {
 
 .next > div {
     display: grid;
-    grid-template-columns: max-content minmax(0, 1fr) max-content;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     column-gap: 1rem;
     align-items: center;
-    text-align: center;
     height: 100%;
 
     padding: 1.2vh 5px;
@@ -77,11 +76,23 @@ input {
 
 .next > div > .plate {
     justify-self: start;
+    grid-column: 1;
     margin-right: 0;
 }
 
+.route-info {
+    grid-column: 2;
+    justify-self: center;
+    white-space: nowrap;
+    min-width: 0;
+    text-align: center;
+}
+
 .remaining-time {
+    grid-column: 3;
     justify-self: end;
+    white-space: nowrap;
+    width: auto;
     text-align: right;
     margin-right: 1vw;
 }

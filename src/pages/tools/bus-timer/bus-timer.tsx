@@ -301,13 +301,11 @@ export default function BusTimer() {
                                 )}
                             </span>
 
-                            {bus.time}発
-                            {" "}
-                            {
-                                bus.destination
-                            }
-                            方面
-
+                            <span className="route-info">
+                                {bus.time}発{" "}
+                                {bus.destination}
+                                方面
+                            </span>
                             <span className="remaining-time">
                                 {Math.floor(BusUtils.getRemainingSeconds(bus.time, delay) / 60)}
 
