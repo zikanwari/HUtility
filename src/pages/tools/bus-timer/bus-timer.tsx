@@ -188,7 +188,7 @@ export default function BusTimer() {
                         >
                             {busStops.map(([stop, id]) => (
                                 <option
-                                    key={stop as string}
+                                    key={id}
                                     value={stop as string}
                                     disabled={stop === "---"}
                                 >
