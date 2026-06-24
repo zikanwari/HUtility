@@ -1,7 +1,7 @@
 export type BusDelayMap = Record<string, Record<string, number>>;
 
 // 新しいバックエンドサーバーのURL
-const BACKEND_URL = "http://localhost:3001/api/delays";
+const BACKEND_URL = "http://api.launchpencil.f5.si/gtfs/delays";
 
 /**
  * バックエンドサーバーからGTFSの遅延情報を取得する

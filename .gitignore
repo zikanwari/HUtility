@@ -4,6 +4,8 @@ logs
 npm-debug.log*
 lerna-debug.log*
 
+package-lock.json
+
 node_modules
 dist
 dist-ssr
@@ -19,5 +21,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-package-lock.json
